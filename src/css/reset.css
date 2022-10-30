@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FDFDFD;
+    color: green;
+    border: 2px solid green;
+    padding: .2rem .6rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: green;
+    color: #fff;
+}
+
+button i {
+    color: green;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input,
+select {
+    padding: 0.12rem 0.12rem;
+}
+
+button:hover>i {
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}

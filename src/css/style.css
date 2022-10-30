@@ -1,0 +1,187 @@
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(green, rgb(51, 153, 66));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+}
+
+#Creator{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 1rem;
+    font-family: Helvetica;
+    background-color: #2BB92B;
+    border: solid black 1px;
+    border-radius: 3px;
+    padding: 1px;
+    box-shadow: 5px 10px 18px black;
+}
+
+.todo-container {
+    margin-top: 3%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(238, 229, 229, 0.884);
+    max-width: 40rem;
+    width: 40%;
+    min-width: 232px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: solid 2px rgba(68, 58, 58, 0.884);
+    border-radius: 5px
+}
+
+.todo-container header h1 {
+    color:rgb(57, 58, 57)
+}
+
+.todo-container #todo-form {
+    align-self: center;
+}
+
+/*Todo-Toolbar*/
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.767);
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .6rem;
+    font-size: 1.6rem;
+}
+
+#search {
+    border-right: 1px solid rgba(197, 197, 197, 0.767);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+/* Todo-Form */
+#todo-form,
+#edit-form {
+    padding: 1.6rem;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.767);
+}
+
+#todo-form p,
+#edit-form p {
+    font-size: 1.6rem;
+    margin-bottom: .2rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.6rem;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.767);
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 1.3rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+/*todo list done*/
+.done {
+    background-color: rgb(43, 185, 43);
+    border-radius: 2px;
+
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+}
+
+@media (max-width: 425px) {
+    #Creator {
+        position: static;
+        align-self: flex-start;
+        font-size: 0.8rem;
+    }
+
+    #toolbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #toolbar h4{
+        margin-top: 30px;
+    }
+
+    #toolbar #search{
+        width: 100%;
+        border-right: none;
+    }
+
+    #toolbar #filter{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #toolbar #filter select {
+        margin: 10px 0 0 5px;
+        height: 20px;
+        transform: translateY(6px);
+    }
+}
+
